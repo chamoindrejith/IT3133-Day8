@@ -1,5 +1,7 @@
-export default function AboutUs() {
+export default function ContactUs() {
+    return(
     <div>
-        <h1>Welcome to Contact Us Page</h1>
+        <h1>Welcome to Contact Us</h1>
     </div>
+    )
 }
