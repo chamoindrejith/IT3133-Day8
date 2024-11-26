@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route, Link, NavLink } from 'react-rou
 import AboutUs from "./components/AboutUs"
 import ContactUs from "./components/ContactUs"
 import Home from "./components/Home"
+import Dashboard from "./components/Dashboard"
+import Login from "./components/Login"
 
 function App() {
   return (
@@ -10,16 +12,19 @@ function App() {
       <Router>
       <nav>
         <ul>
-          <li><Link to="/">Home</Link></li>
+          <li><Link to="/home">Home</Link></li>
           <li><Link to="/about">About Us</Link></li>
           <li><Link to="/contact">Contcat Us</Link></li>
+          <li><Link to="/login">Login</Link></li>
         </ul>
       </nav>
         <Routes>
   
-          <Route path='/' element={<Home />} />
+          <Route path='/home' element={<Home />} />
           <Route path='/about' element={<AboutUs />} />
           <Route path='/contact' element={<ContactUs />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/' element={<Dashboard />} />
         </Routes>
       </Router>
     </div>
